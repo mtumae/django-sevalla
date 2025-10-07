@@ -20,9 +20,11 @@ from django.urls import path
 
 from django_demo import settings
 from django_demo.views import django_default_view
+from django_demo.views import home
 
 urlpatterns = [
     path('', django_default_view, name='django-default-view'),
+    path('home/', home, name='home'),
     path('admin/', admin.site.urls),
 ]
 
